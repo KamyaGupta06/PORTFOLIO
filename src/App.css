@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-brown:#53423e;
+  --color-lightBrown:#645550;
+  --color-darkBrown:#2c2523;
+  --color-black:#1e1917;
+  --color-white: #f1e1d9;
+  --color-cyan:#15d1e9;
+  --color-lightCyan: #88e5f0;
+  --color-darkCyan: #009fb3;
+  --color-orange: #fb9718;
+  --color-lightOrange: #fac27b;
+  --color-darkOrange:#d28422;
+  --color-grey:#626965;
+  --color-lightGrey:#978580;
+  --color-darkGrey:#3f4441;
+  --font-body:"Josefin Sans";
+  --font-special:"Roboto";
+  --shadow-cyanShadow:0px 0px 20px 0px rgba(94,286,220,0.5);
+  --breakpoint-sm: 350px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl:1536px;
+  --shadow-cyanMedShadow:10px 10px 200px 150px rgba(94,206,220,0.5);
+  --shadow-orangeMedShadow:10px 10px 200px 150px rgba(240,169,79,0.5);
+  
+}
+body{
+  @apply bg-darkBrown;
+}
