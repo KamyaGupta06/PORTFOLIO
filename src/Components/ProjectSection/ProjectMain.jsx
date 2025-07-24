@@ -2,24 +2,25 @@ import React from 'react'
 import ProjectText from './ProjectText'
 import SingleProject from './SingleProject'
 const projects=[
+     {
+        name:'Food Delivery App',
+        align:'right',
+        image:'/Images/Food-App.png',
+        link:'https://github.com/KamyaGupta06/Food-Delivery',
+    },
     {
         name:'News App',
-        align:'right',
+        align:'left',
         image:'/Images/News-appImg.png',
         link:'https://github.com/KamyaGupta06/News-Website', // add git hub link
     },
     {
         name:'Currency Convertor ',
-        align:'left',
+        align:'right',
         image:'/Images/Currency-Convertorimage.png',
         link:'https://github.com/KamyaGupta06/Currency-Convertor',
     },
-    {
-        name:'Paste App',
-        align:'right',
-        image:'/Images/Paste-AppImg.png',
-        link:'https://github.com/KamyaGupta06/Paste-App',
-    },
+    
 
 ]
 const ProjectMain = () => {

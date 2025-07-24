@@ -6,7 +6,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
+import { DiMongodb, DiMysql } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import {motion} from "framer-motion"
@@ -45,12 +45,16 @@ const skills=[
     icon:SiExpress,
    },
    {
-    skill:"MongoDb",
+    skill:"MongoDB",
     icon:DiMongodb,
    },
    {
     skill:"Tailwind",
     icon:RiTailwindCssFill,
+   },
+   {
+    skill:"MYSQL",
+    icon:DiMysql,
    },
   
 
@@ -58,13 +62,13 @@ const skills=[
 const AllSkillSM = () => {
   return (
     <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12'>
-      {skills.map((item,index)=>{
+      {skills.map((item)=>{
         return <motion.div 
          variants={fadeIn('up',0.2)}
                initial='hidden'
                whileInView='show'
                viewport={{once:false ,amount:0.7}} 
-        key={index} 
+        key={item.skill} 
         className='flex flex-col items-center'> 
             <item.icon className='text-7xl text-orange'/>
             <p className='text-center mt-4 text-white'>{item.skill}</p>
